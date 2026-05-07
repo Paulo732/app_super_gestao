@@ -41,7 +41,7 @@ Route::middleware(['autenticacao:padrao,visitante,p3,p4'])->prefix('/app')->grou
     //Produtos Detalhes
     Route::resource('produto-detalhe', ProdutoDetalheController::class);
 
-    Route::resource('cliente', 'ClienteController');
+    Route::resource('cliente', ClienteController::class);
     Route::resource('pedido', 'PedidoController');
     Route::resource('pedido-produto', 'PedidoProdutoController');
 
